@@ -1,0 +1,109 @@
+Hack Knight Team Checklist & Game Plan
+Phase 1: Foundation & Planning (Friday, 10 AM - 2 PM)
+[ ] Check-in & Settle: Get checked in, find a good spot with power outlets, and get connected to the WiFi.
+
+[ ] Finalize Idea: Lock in your final project idea. Decide: what's the one simple question the user will ask? (e.g., "What's my workout?" or "What should I wear?").
+
+[ ] API Key: (CRITICAL) One person signs up for a Google AI Studio account and gets a Gemini API key. Share this securely with the team (e.g., in your Discord chat). Do this first, as it can sometimes be a bottleneck.
+
+[ ] Setup GitHub: One person creates a new public repository on GitHub. Invite all team members as collaborators. Everyone must git clone the repository to their laptop.
+
+[ ] Basic Design: On paper or a whiteboard, draw the user interface. It should be super simple:
+
+A title (e.g., "Outfit Oracle")
+
+A text input box
+
+A "Generate" button
+
+An empty box below where the results will appear
+
+A loading spinner area (optional but cool)
+
+[ ] Assign Roles: Use the role breakdown below. Make sure everyone understands their primary focus.
+
+Phase 2: The Core Build (Friday, 2 PM - Saturday, 6 PM)
+[ ] HTML Structure: (Person A) Create the index.html file with the elements you designed on paper.
+
+[ ] Initial Styling: (Person B) Create the style.css file. Add basic colors, fonts, and layout. Link it to the HTML. Use a framework like Bootstrap to speed this up.
+
+[ ] JavaScript UI Logic: (Person C) Create the script.js file. Write the code to:
+
+Select the button and the input box.
+
+Create a "click" event listener for the button.
+
+When clicked, grab the text from the input box and log it to the console.
+
+[ ] API Function: (Person D) In the script.js file, write the JavaScript fetch function to call the Gemini API.
+
+Start by making it work with a hard-coded prompt (e.g., "suggest a workout for chest day").
+
+Log the API's response to the console.
+
+[ ] INTEGRATION MILESTONE: Combine the UI logic and the API function.
+
+(Person C & D work together) Modify the code so the text from the input box is used as the prompt for the API call.
+
+(Person C & D work together) Take the response from the API and display it in the results box on the webpage.
+
+Celebrate! This is your Minimum Viable Product (MVP).
+
+[ ] Add Loading State: (Person C) Make a "Loading..." message or spinner appear after the user clicks the button and disappear when the API response arrives.
+
+Phase 3: Polish & Deployment (Saturday, 6 PM - Sunday, 11 AM)
+[ ] Refine CSS: (Person B) Make the site look as good as possible. Ensure it looks okay on mobile (responsive design).
+
+[ ] Error Handling: (Person D) What happens if the API call fails? Display a simple error message to the user.
+
+[ ] Get a Domain: (Team Decision) Go to GoDaddy Registry's sponsor table (or use their hackathon offer) and get a cool domain name for your project.
+
+[ ] Deploy! (Person D) Use Cloudflare Pages or GitHub Pages to put your website on the internet using your new domain. Practice the steps for this.
+
+[ ] Write the README.md: On your GitHub page, write a simple description of what your project is and how it works.
+
+[ ] Prepare Presentation: (Person D leads, everyone contributes) Create 2-3 simple slides.
+
+Slide 1: Project Name, Team Members, and The Problem (e.g., "Deciding what to wear is hard!")
+
+Slide 2: Our Solution (A screenshot of your awesome app) and a quick explanation.
+
+Slide 3: Tech We Used (HTML, CSS, JS, Gemini API, Cloudflare, GoDaddy).
+
+[ ] Submit to Devpost: Fill out the Devpost submission form for the project. Do not leave this until the last minute!
+
+Phase 4: Showtime (Sunday, 11 AM - 4 PM)
+[ ] Practice the Pitch: Rehearse your presentation (which will mostly be a live demo) at least 3 times. Everyone should say something. Keep it under 3 minutes.
+
+[ ] Final Code Freeze: Stop coding. Make sure your deployed version is stable.
+
+[ ] Present with Energy! Show the judges your live, working app. Be proud of what you built in a weekend.
+
+Splitting the Work: Roles for a 4-Person Beginner Team
+The key is pair programming. You are all learning. A & B should work together, and C & D should work together, frequently checking in with the other pair.
+
+Person A: The Architect (UI Structure Lead)
+
+Primary Task: Write the index.html file. Define the skeleton of the website. Make sure all the necessary divs, inputs, and buttons are there and have clear IDs.
+
+Focus on Learning: Semantic HTML, basic page structure.
+
+Person B: The Stylist (CSS & Design Lead)
+
+Primary Task: Own the style.css file. Make the website look clean and modern. Your goal is to take the HTML skeleton from Person A and make it look great. You should explore a framework like Bootstrap to get good results fast.
+
+Focus on Learning: CSS (colors, fonts, spacing), using a CSS framework, and basic responsive design.
+
+Person C: The Scripter (Client-Side Logic Lead)
+
+Primary Task: Own the user-facing part of the script.js file. You make the page feel alive. Write the JavaScript code that handles button clicks, reads text from input fields, and displays the final result back to the user in the results box.
+
+Focus on Learning: JavaScript DOM manipulation (getElementById, .addEventListener, .innerText).
+
+Person D: The Communicator (API & Project Lead)
+
+Primary Task: Own the API connection part of script.js. Write the fetch code to send a request to the Gemini API and handle the response. You are also the project manager: you will create the GitHub repo, manage deployment (with help), write the presentation script, and submit to Devpost.
+
+Focus on Learning: JavaScript fetch() API, handling JSON data, project management, and presentation skills.
+
+Good luck at Hack Knight! Have fun, learn a ton, and don't forget to eat and sleep.
