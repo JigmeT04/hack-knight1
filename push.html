@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle & Fitness Page - Expanded</title>
+    <style>
+        /* --- General Reset & Layout --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        /* --- Header Styling --- */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center; 
+        }
+
+        /* Header Left Section (Logo) */
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the Logo text */
+        .logo {
+            font-size: 28px; 
+            font-weight: bold;
+            color: #ffcc00; 
+            text-decoration: none; 
+        }
+        
+        /* Header Right Section (Navigation) */
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            padding: 8px 15px;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .nav-links a:hover {
+            background-color: #555;
+        }
+
+        /* --- Main Content Styling --- */
+        .main-content {
+            padding: 30px 40px;
+            max-width: 1200px;
+            margin: 0 auto; 
+        }
+
+        /* Muscle Image Section */
+        .muscle-images {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            gap: 25px; 
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        /* Making image cards clickable */
+        .image-card {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+            /* Ensure link text doesn't show default underline/color */
+            text-decoration: none;
+            color: #333; 
+        }
+
+        .image-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .image-card img {
+            width: 180px; 
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .image-card p {
+            margin: 8px 0 0;
+            font-weight: bold;
+            color: #555;
+        }
+
+        /* Clickable Fields Section - UPDATED for 5 boxes */
+        .clickable-fields {
+            display: flex;
+            /* Allow boxes to wrap onto the next line */
+            flex-wrap: wrap; 
+            /* Space between boxes */
+            gap: 20px; 
+            justify-content: center; /* Center boxes horizontally */
+        }
+
+        .field-link {
+            /* Now set a fixed width for the boxes to ensure they stack correctly. */
+            /* This width makes two boxes fit comfortably on one line with spacing. */
+            width: calc(50% - 30px); 
+            background-color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 20px;
+            border-bottom: 5px solid #ffcc00; 
+            transition: background-color 0.2s, transform 0.2s;
+        }
+
+        .field-link:hover {
+            background-color: #fff8e1; 
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        
+        /* Style for the second line of boxes to visually separate */
+        .clickable-fields a:nth-child(n+3) {
+            margin-top: 10px; 
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="/" class="logo">💪 FitTrack</a>
+        </div>
+        <nav class="nav-links">
+            <a href="#exercises">Exercises</a>
+            <a href="#tools">Tools</a>
+            <a href="#forum">Forum</a>
+            <a href="#premium">Premium</a>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        
+        <h2>Targeted Muscle Groups</h2>
+
+        <section class="muscle-images">
+            <a href="/programs.html" class="image-card">
+                <img src="https://images.unsplash.com/photo-1627483321516-7788448f8045?ixlib=rb-4.0.3&q=80&w=200&h=200&fit=crop" alt="Biceps Muscle">
+                <p>Arms (Biceps)</p>
+            </a>
+            <a href="/programs.html" class="image-card">
+                <img src="https://images.unsplash.com/photo-1549476043-34e857463f82?ixlib=rb-4.0.3&q=80&w=200&h=200&fit=crop" alt="Chest Muscle">
+                <p>Chest (Pecs)</p>
+            </a>
+            <a href="/programs.html" class="image-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f5b45d5b?ixlib=rb-4.0.3&q=80&w=200&h=200&fit:crop" alt="Back Muscle">
+                <p>Back (Lats)</p>
+            </a>
+            <a href="/programs.html" class="image-card">
+                <img src="https://images.unsplash.com/photo-1594917631165-f938c8238128?ixlib=rb-4.0.3&q=80&w=200&h=200&fit:crop" alt="Leg Muscle">
+                <p>Legs (Quads)</p>
+            </a>
+        </section>
+
+        <hr style="border: 0; height: 1px; background-color: #ddd; margin: 40px 0;">
+
+        <h2>Your Fitness Journey Starts Here</h2>
+
+        <section class="clickable-fields">
+            <a href="/programs.html" class="field-link">
+                🏋️‍♂️ Training Programs
+            </a>
+            <a href="/nutrition.html" class="field-link">
+                🍎 Meal Planning
+            </a>
+            <a href="/faq.html" class="field-link">
+                🔬 Scientific FAQs
+            </a>
+            <a href="/testimonials.html" class="field-link">
+                ⭐ Client Testimonials
+            </a>
+            <a href="/qna.html" class="field-link">
+                🎙️ Live Q&A Schedule
+            </a>
+        </section>
+
+    </main>
+
+</body>
+</html>
