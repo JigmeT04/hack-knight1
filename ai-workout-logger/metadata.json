@@ -1,0 +1,5 @@
+
+{
+  "name": "AI Workout Logger",
+  "description": "A web application to log your workouts and receive personalized workout recommendations from an AI personal trainer powered by the Gemini API."
+}
